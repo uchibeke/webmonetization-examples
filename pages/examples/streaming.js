@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
-import Link from "../src/Link";
-import Wrapper from "../components/Wrapper";
+import Link from "../../src/Link";
+import Wrapper from "../../components/Wrapper";
 import {
   useMonetizationState,
   useMonetizationCounter,

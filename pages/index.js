@@ -1,7 +1,6 @@
 import * as React from "react";
-import { Container, Typography, Box, Button, Grid } from "@mui/material/";
-import ProTip from "../src/ProTip";
-import Copyright from "../src/Copyright";
+import { Typography, Box, Button, Grid } from "@mui/material/";
+import Wrapper from "../components/Wrapper";
 
 const CustomLink = ({ title, url }) => {
   return (
@@ -15,16 +14,17 @@ const CustomLink = ({ title, url }) => {
 
 export default function Index() {
   return (
-    <Container maxWidth="md">
+    <Wrapper>
       <Box sx={{ my: 4 }}>
         <Typography variant="h4" component="h1" gutterBottom align="center">
           Web Monetization Examples
         </Typography>
-        <CustomLink title="View streaming events" url="/streaming" />
-        <CustomLink title="Detect and Respond to tip" url="/tip-respond" />
-        <ProTip />
-        <Copyright />
+        <CustomLink title="View streaming events" url="examples/streaming" />
+        <CustomLink
+          title="Detect and Respond to tip"
+          url="examples//tip-respond"
+        />
       </Box>
-    </Container>
+    </Wrapper>
   );
 }
